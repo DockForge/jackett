@@ -181,6 +181,7 @@ jobs:
                   IMAGE_LIST+=",${{ env.Repository }}:${MAJOR_MINOR_VERSION}-alpha"
                 fi
                 IMAGETOOLS_CMD+="--tag ${{ env.Repository }}:${MAJOR_VERSION}-alpha "
+                IMAGETOOLS_CMD+="--tag ${{ env.Repository }}:alpha "
                 IMAGE_LIST+=",${{ env.Repository }}:${MAJOR_VERSION}-alpha"
                 IMAGE_LIST+=",${{ env.Repository }}:alpha"
               elif [[ "${SUFFIX}" =~ [bB] ]]; then
@@ -197,6 +198,7 @@ jobs:
                   IMAGE_LIST+=",${{ env.Repository }}:${MAJOR_MINOR_VERSION}-beta"
                 fi
                 IMAGETOOLS_CMD+="--tag ${{ env.Repository }}:${MAJOR_VERSION}-beta "
+                IMAGETOOLS_CMD+="--tag ${{ env.Repository }}:beta "
                 IMAGE_LIST+=",${{ env.Repository }}:${MAJOR_VERSION}-beta"
                 IMAGE_LIST+=",${{ env.Repository }}:beta"
               else
