@@ -182,6 +182,7 @@ jobs:
                 fi
                 IMAGETOOLS_CMD+="--tag ${{ env.Repository }}:${MAJOR_VERSION}-alpha "
                 IMAGE_LIST+=",${{ env.Repository }}:${MAJOR_VERSION}-alpha"
+                IMAGE_LIST+=",${{ env.Repository }}:alpha"
               elif [[ "${SUFFIX}" =~ [bB] ]]; then
                 if [[ -n "$FULL_VERSION" ]]; then
                   IMAGETOOLS_CMD+="--tag ${{ env.Repository }}:${FULL_VERSION}-beta "
@@ -197,6 +198,7 @@ jobs:
                 fi
                 IMAGETOOLS_CMD+="--tag ${{ env.Repository }}:${MAJOR_VERSION}-beta "
                 IMAGE_LIST+=",${{ env.Repository }}:${MAJOR_VERSION}-beta"
+                IMAGE_LIST+=",${{ env.Repository }}:beta"
               else
                 if [[ -n "$FULL_VERSION" ]]; then
                   IMAGETOOLS_CMD+="--tag ${{ env.Repository }}:${FULL_VERSION} "
