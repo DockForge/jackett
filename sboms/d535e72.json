@@ -69754,15 +69754,14 @@
   "source": {
     "id": "bd9c129d74cf2e1061aa60bd3d4d81110dac46e9594546e0b336df502574e890",
     "name": "dublok/jackett",
-    "version": "main",
+    "version": "d535e72",
     "type": "image",
     "metadata": {
-      "userInput": "dublok/jackett:main",
+      "userInput": "dublok/jackett:d535e72",
       "imageID": "sha256:e4243f03ce2267b86232b79e79a41c2beddd763a0d3724fe657410271861ceca",
       "manifestDigest": "sha256:bd9c129d74cf2e1061aa60bd3d4d81110dac46e9594546e0b336df502574e890",
       "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
       "tags": [
-        "dublok/jackett:main",
         "dublok/jackett:d535e72"
       ],
       "imageSize": 178238181,
